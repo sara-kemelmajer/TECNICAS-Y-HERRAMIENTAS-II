@@ -1,4 +1,4 @@
-# TÉCNICAS Y HERRAMINETAS MODERNAS II
+# TÉCNICAS Y HERRAMIENTAS MODERNAS II
 
 ### **Integrantes:**
 - Kemelmajer, Sara <https://github.com/sara-kemelmajer/modulo-1>
