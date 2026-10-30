@@ -1,4 +1,4 @@
-# TECNICAS-Y-HERRAMINETAS-II
+# TECNICAS Y HERRAMINETAS MODERNAS II
 
 ### **Integrantes:**
 - Pilar Mujica <https://github.com/pilar-mujica/modulo_1>
