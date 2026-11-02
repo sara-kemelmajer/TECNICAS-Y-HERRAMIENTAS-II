@@ -1,0 +1,160 @@
+\documentclass[runningheads]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Asistencia de la Inteligencia Artificial en la redacción de planes y proyectos}
+
+\author{Sara Kemlemajer \and Rocio Martinez \and Pilar Mujica \and Lucia Salamone}
+
+\authorrunning{avogrado}
+
+\institute{Universidad Nacional de Cuyo, Instituto de Ingeniería Industrial\\
+\url{https://ingenieria.uncuyo.edu.ar/}}
+
+\maketitle
+La inteligencia artificial (IA) generativa, en particular los modelos de lenguaje de gran escala (LLM), se ha incorporado rápidamente a las tareas de redacción técnica y profesional. Vamos analizar su aplicación como herramienta de asistencia en la elaboración de planes y proyectos, documentos centrales en la práctica de la Ingeniería Industrial. Describimos  el funcionamiento de estos modelos, identificamos las etapas de la redacción en las que aportan mayor valor (estructuración, borradores, síntesis, revisión de estilo y verificación de coherencia), y proponemos una metodología de trabajo basada en instrucciones claras y revisión humana. Finalmente, discutimos sus limitaciones más relevantes, como la generación de información incorrecta, los sesgos, la confidencialidad de los datos y la responsabilidad sobre la autoría. Concluimos que la IA resulta un apoyo valioso para ganar tiempo y calidad formal, siempre que el criterio  y la validación de los contenidos permanezcan a cargo del equipo.
+
+\keywords{UNCUYO \and TyHM \and Inteligencia artificial \and Redacción técnica \and Gestión de proyectos.}
+\end{abstract}
+
+\section{Introducción}
+
+La redacción de  proyectos y calculos  es una actividad  en ingeniería: planes de negocio, proyectos , planes de mantenimiento, propuestas de mejora de procesos e informes de factibilidad comparten la necesidad de comunicar información técnica de forma ordenada, precisa y convincente. Estas tareas consumen una parte importante del tiempo de un proyecto, especialmente en las etapas de estructuración del documento, armado de borradores y revisión final.
+
+En los últimos años, los modelos de lenguaje basados en la ingenieria  alcanzaron una capacidad notable para generar y transformar texto a partir de instrucciones en lenguaje natural . Herramientas como ChatGPT, Claude o Gemini, así como asistentes integrados en procesadores de texto y editores como Overleaf, permiten hoy delegar parte del trabajo de escritura a un sistema automático.
+
+El objetivo es analizar de qué manera la IA puede asistir en la redacción de planes y proyectos,  sus beneficios concretos, qué riesgos implica y qué buenas prácticas conviene adoptar para utilizarla de forma responsable.
+
+\section{Fundamentos de la IA generativa}
+
+Un LLM es un modelo estadístico entrenado con grandes volúmenes de texto para predecir la continuación más probable de una secuencia de palabras. A partir de ese entrenamiento, el modelo aprende patrones de gramática, estilo, estructura de documentos y una cantidad considerable de conocimiento general. Cuando el usuario escribe una instrucción (\emph{prompt}), el modelo genera una respuesta coherente con ella.
+
+Es importante remarcar dos características que condicionan su uso en documentos técnicos:
+
+\begin{itemize}
+\item El modelo genera texto \emph{plausible}, no necesariamente \emph{verdadero}. Puede producir datos, cifras o referencias inexistentes con total fluidez, fenómeno conocido como ``alucinación'' \cite{ji2023}.
+\item El modelo no conoce el contexto particular del proyecto (la empresa, sus costos, sus restricciones) salvo que el usuario se lo proporcione explícitamente.
+\end{itemize}
+
+Por estas razones, la IA debe entenderse como un asistente de redacción y no como una fuente de información ni como un reemplazo del análisis técnico.
+
+\section{Aplicaciones en la redacción de planes y proyectos}
+
+Un plan o proyecto suele seguir una estructura más o menos estándar: resumen , diagnóstico de la situación, objetivos, alcance, metodología, cronograma, presupuesto, análisis de riesgos y conclusiones . La IA puede intervenir en cada una de estas secciones con distinto grado de utilidad
+
+\begin{table}
+\caption{Aplicaciones de la IA según la sección del documento.}\label{tab:aplicaciones}
+\centering
+\begin{tabular}{|p{3.2cm}|p{5.3cm}|p{2.2cm}|}
+\hline
+\textbf{Sección} & \textbf{Aporte de la IA} & \textbf{Revisión requerida}\\
+\hline
+Estructura general & Propuesta de índice y orden lógico de secciones & Baja\\
+Resumen ejecutivo & Síntesis del documento completo en pocos párrafos & Media\\
+Diagnóstico & Ordenar ideas, armar matrices FODA a partir de datos del equipo & Alta\\
+Objetivos & Reformular objetivos en formato SMART & Media\\
+Cronograma & Sugerir actividades y dependencias, formato de diagrama de Gantt & Alta\\
+Presupuesto & Formato y plantillas; nunca valores sin fuente & Muy alta\\
+Riesgos & Listar riesgos típicos y medidas de mitigación & Alta\\
+Redacción final & Corrección ortográfica, estilo, tono y coherencia & Baja\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Estructuración y borradores}
+
+Una de las mayores dificultades al comenzar un documento es pasar de la hoja en blanco a un primer borrador. La IA permite generar rápidamente un esquema de secciones adaptado al tipo de proyecto y un borrador inicial que el equipo luego corrige y completa. Estudios experimentales con tareas de escritura profesional muestran reducciones significativas en el tiempo de trabajo y mejoras en la calidad percibida de los textos cuando se usa este tipo de asistencia \cite{noy2023}.
+
+\subsection{Síntesis y adaptación de contenido}
+
+Los planes suelen dirigirse a distintos públicos: un directorio necesita un resumen ejecutivo breve, mientras que el ingeniero es mas técnico, necesita el detalle completo. La IA es especialmente eficaz para resumir, reescribir con un tono más formal o más simple, traducir y adaptar un mismo contenido a diferentes formatos.
+
+\subsection{Revisión y control de calidad}
+
+En la etapa final, la IA puede detectar errores ortográficos y gramaticales, frases ambiguas, contradicciones entre secciones (por ejemplo, fechas del cronograma que no coinciden con las del texto) y omisiones respecto de una estructura esperada. También puede asistir en la escritura  sugiriendo el código para tablas, listas o ecuaciones, lo que resulta útil 
+\section{Metodología de trabajo propuesta}
+
+La calidad del resultado depende en gran medida de la calidad de la instrucción. Proponemos un flujo de trabajo en cinco pasos:
+
+\begin{enumerate}
+\item \textbf{Definir el contexto:} indicar el tipo de documento, el destinatario, el objetivo y el tono esperado.
+\item \textbf{Aportar los datos propios:} incluir la información real del proyecto (cifras, plazos, restricciones), ya que el modelo no la conoce.
+\item \textbf{Pedir por partes:} solicitar una sección a la vez en lugar del documento completo, lo que facilita el control.
+\item \textbf{Revisar críticamente:} verificar cada dato, cálculo y referencia contra fuentes confiables.
+\item \textbf{Iterar:} pedir correcciones específicas hasta lograr el resultado buscado.
+\end{enumerate}
+
+A modo de ejemplo, una instrucción bien formulada para redactar una sección podría ser la siguiente:
+
+\begin{verbatim}
+Actuá como ingeniero industrial. Redactá la sección "Objetivos"
+de un proyecto de mejora para reducir los tiempos de setup de
+un torno  en una empresa metalúrgica mediana. Datos: el setup
+actual dura 45 minutos y la meta es bajarlo a 20 minutos en
+6 meses aplicando SMED. Escribí un objetivo general y tres
+objetivos específicos , en tono formal.
+\end{verbatim}
+
+Esta instrucción define un rol, el tipo de documento, el contexto, los datos concretos, el formato y el tono, lo que reduce la ambigüedad y mejora notablemente la respuesta.
+
+\section{Limitaciones y riesgos}
+
+El uso de IA en la redacción de documentos técnicos presenta riesgos que deben gestionarse:
+
+\begin{itemize}
+\item \textbf{Información incorrecta:} eEl modelo puede inventar datos, normas o bibliografía. Ninguna referencia generada debe incluirse sin verificación.
+\item \textbf{Desempeño desigual:} la IA rinde muy bien en algunas tareas y  mal en otras de dificultad aparentemente similar. Se observó que los profesionales que confían en ella fuera de su zona de buen desempeño obtienen peores resultados que sin usarla.
+\item \textbf{Sesgos y generalidades:} las respuestas tienden a ser genéricas y pueden reproducir problemas presentes en los datos.
+\item \textbf{Confidencialidad:} cargar información sensible de una empresa (costos, clientes, datos personales) en servicios externos puede violar acuerdos de confidencialidad o políticas internas.
+\item \textbf{Autoría e integridad académica:} el equipo sigue siendo responsable del contenido. En ámbitos educativos, el uso de IA debe declararse y no debe sustituir el aprendizaje 
+
+\section{Buenas prácticas}
+
+A partir de lo anterior, recomendamos:
+
+\begin{itemize}
+\item Usar la IA para estructurar, redactar y revisar, pero no como fuente de datos.
+\item Verificar toda cifra, cálculo, norma y referencia bibliográfica.
+\item resumir la información sensible antes de compartirla con la herramienta.
+\item Conservar el criterio técnico del equipo en las decisiones del proyecto.
+\item Declarar explícitamente el uso de IA en el documento final.
+\end{itemize}
+
+\section{Conclusiones}
+
+La IA generativa constituye una herramienta de gran utilidad para la redacción : acelera la elaboración de borradores, facilita la síntesis y adaptación de contenidos, y mejora la calidad formal de los documentos. Sin embargo, su aporte se concentra en la \emph{forma} más que en el \emph{fondo}. El diagnóstico, las decisiones técnicas, los números y la validación de la información siguen siendo responsabilidad del equipo de trabajo.
+
+Utilizada con instrucciones claras, datos propios y revisión crítica, la IA permite que el ingeniero dedique más tiempo al análisis y menos a la escritura mecánica, lo que la convierte en una competencia relevante para la formación profesional en Ingeniería Industrial.
+
+
+\begin{thebibliography}{8}
+
+\bibitem{brown2020}
+Brown, T., et al.: Language models are few-shot learners. In: Advances in Neural Information Processing Systems, vol.~33, pp. 1877--1901 (2020)
+
+\bibitem{dellacqua2023}
+Dell'Acqua, F., et al.: Navigating the jagged technological frontier: Field experimental evidence of the effects of AI on knowledge worker productivity and quality. Harvard Business School Working Paper No. 24-013 (2023)
+
+\bibitem{ji2023}
+Ji, Z., et al.: Survey of hallucination in natural language generation. ACM Computing Surveys \textbf{55}(12), 1--38 (2023)
+
+\bibitem{kasneci2023}
+Kasneci, E., et al.: ChatGPT for good? On opportunities and challenges of large language models for education. Learning and Individual Differences \textbf{103}, 102274 (2023)
+
+\bibitem{noy2023}
+Noy, S., Zhang, W.: Experimental evidence on the productivity effects of generative artificial intelligence. Science \textbf{381}(6654), 187--192 (2023)
+
+\bibitem{pmi2021}
+Project Management Institute: A Guide to the Project Management Body of Knowledge (PMBOK Guide), 7th edn. PMI, Newtown Square (2021)
+
+\bibitem{vaswani2017}
+Vaswani, A., et al.: Attention is all you need. In: Advances in Neural Information Processing Systems, vol.~30 (2017)
+
+\end{thebibliography}
+
+\end{document}
