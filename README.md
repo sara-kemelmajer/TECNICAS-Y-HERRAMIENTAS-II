@@ -3,10 +3,10 @@
 ## Entregas TyHMII 2026 - Grupo META
 
 ### **Integrantes:**
-- Kemelmajer, Sara <https://github.com/sara-kemelmajer/modulo-1>
-- Martínez, Rocio <https://github.com/rocimartinezdiaz-code/Modulo-1>
-- Mujica, Pilar <https://github.com/pilar-mujica/modulo_1>
-- Salamone, Lucía <https://github.com/lucia-salamone/modulo_1>
+- Kemelmajer, Sara <https://github.com/sara-kemelmajer>
+- Martínez, Rocio <https://github.com/rocimartinezdiaz-code>
+- Mujica, Pilar <https://github.com/pilar-mujica>
+- Salamone, Lucía <https://github.com/lucia-salamone>
 
 | Nombre y Apellido | Dirección de mail | Número de teléfono |
 |:-----------------:|:-----------------:|:------------------:|
