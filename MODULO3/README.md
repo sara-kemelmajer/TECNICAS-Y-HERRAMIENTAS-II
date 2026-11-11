@@ -101,6 +101,20 @@ Las escenas cubren el sector **Volcán Maipo – Laguna del Diamante** (San Carl
 
 ---
 
+## ⚠️ Alcance y simplificaciones
+
+Este trabajo tiene fines académicos y se hizo con datos abiertos, por lo que adopta varias simplificaciones:
+
+* **Actividad 1:** el empleo se estimó a partir de rangos del CEP XXI y de domicilios declarados ante AFIP, asignados a cada parque en un radio de 2 km.
+* **Actividad 2:** la nieve se clasificó sin la banda SWIR (sin NDSI), comparando solo dos fechas y midiendo superficie, no volumen de agua.
+* **Actividad 3:** los escenarios de crecida usan umbrales de altura sobre el río (1,5 m y 3 m) definidos por criterio, no calculados con caudales. El índice aluvional usa pesos no calibrados, y el modelo de elevación (30 m) no representa canales ni obras de defensa.
+
+Por eso, los **patrones espaciales** y las **tendencias** (dónde se concentra el empleo, que en 2026 hubo más nieve, qué corredores y parques son más susceptibles) son robustos. Las **cifras exactas** (puestos por parque, % de aumento de nieve, km² inundables) deben leerse como **escenarios**.
+
+El detalle de cada simplificación, qué haría falta para un modelo preciso y cómo podría cambiar cada conclusión está en la sección *"Simplificaciones, alcance y mejoras para un modelo preciso"* del [informe](Informe_Modulo3.pdf).
+
+---
+
 ## Descargas
 
 * [Paquete Actividad 1 (.zip)](Actividad1.zip)
