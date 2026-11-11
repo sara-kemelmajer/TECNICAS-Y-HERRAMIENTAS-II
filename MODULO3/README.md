@@ -101,7 +101,7 @@ Las escenas cubren el sector **Volcán Maipo – Laguna del Diamante** (San Carl
 
 ---
 
-## ⚠️ Alcance y simplificaciones
+##  Alcance y simplificaciones
 
 Este trabajo tiene fines académicos y se hizo con datos abiertos, por lo que adopta varias simplificaciones:
 
