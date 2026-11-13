@@ -31,14 +31,9 @@ Criterios y pesos: riesgo hídrico en año Niño 42,1 %, cercanía a la materia 
 El análisis de sensibilidad muestra que la decisión queda entre dos finalistas: PASIP gana en 3 de 6 escenarios de pesos y AI Acceso Sur en los otros 3. La elección final entre ambos se deja para el estudio de costos (capítulos V y VI del Manual).
 
 ## Archivos
+[`informe_localizacion_SQL.pdf`] 
 
-| Archivo | Contenido |
-|---|---|
-| [`informe_localizacion_SQL.pdf`] | Informe (formato LNCS) | 
-| `localizacion.sql` | Script completo: tablas, datos, vistas del AHP y sensibilidad |
-| `localizacion.db` | Base SQLite ya construida |
-| `localizacion_SQL.Rmd` | Las mismas consultas desde R Markdown (DBI + RSQLite) |
-| `informermarkdown.pdf` | El .Rmd tejido a PDF |
+
 
 ## Fuentes de datos
 
