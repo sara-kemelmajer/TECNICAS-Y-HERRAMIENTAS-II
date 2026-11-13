@@ -35,12 +35,11 @@ El análisis de sensibilidad muestra que la decisión queda entre dos finalistas
 **[`localizacion.db`](localizacion.db)**
 **[`localizacion_SQL.Rmd`](localizacion_SQL.Rmd)**
 **[`informermarkdown.pdf`](informermarkdown.pdf)**
-**[`informe_localizacion_SQL.pdf`](Informe (formato LNCS))**
 
 
 | Archivo | Contenido |
 |---|---|
-| **[`informe_localizacion_SQL.pdf`] (`informe_localizacion_SQL.pdf`)** | Informe (formato LNCS) |  
+| **[`informe_localizacion_SQL.pdf`](informe_localizacion_SQL.pdf)** | Informe (formato LNCS) |  
 | `localizacion.sql` | Script completo: tablas, datos, vistas del AHP y sensibilidad |
 | `localizacion.db` | Base SQLite ya construida |
 | `localizacion_SQL.Rmd` | Las mismas consultas desde R Markdown (DBI + RSQLite) |
