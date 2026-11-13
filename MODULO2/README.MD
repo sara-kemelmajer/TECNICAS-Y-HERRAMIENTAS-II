@@ -20,7 +20,10 @@ El módulo tiene cuatro informes, encadenados de a dos: el informe 1 dio la meto
 - **Alcance del informe 2:** todavía no contamos con los datos reales de la planta, así que este informe es un **ejercicio preliminar** y no el informe definitivo del proyecto final.
   - El **diagnóstico** (Superniño, antecedente de 2016, vendimia 2026) se hizo con datos reales verificados.
   - El **plan de producción** usa **supuestos** del equipo (volumen, capacidad, distribución semanal), identificados como tales.
-  - El informe definitivo del proyecto final se hará siguiendo los mismos pasos, reemplazando los supuestos por datos reales.
+  - El informe definitivo del proyecto final se podría hacer siguiendo los mismos pasos, reemplazando los supuestos por datos reales.
+
+- **Organización del informe 2:** el plan propiamente dicho está en las **secciones 3 a 9** (diagnóstico, objetivos, alcance, plan de producción, cronograma, presupuesto y riesgos). Las secciones 2 (metodología de redacción con IA) y 10 (revisión crítica y verificación de datos) documentan cómo se elaboró el plan con asistencia de IA. El resumen, la introducción y las conclusiones abarcan ambos aspectos. 
+
 
 ### Informe 3: Taller de fotografía forense digital
 - Se fotografió la pieza con el protocolo forense **de lo general a lo particular**, sin limpiarla ni modificarla, sobre fondo neutro.
