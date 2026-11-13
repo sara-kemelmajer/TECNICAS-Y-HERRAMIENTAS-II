@@ -1,18 +1,9 @@
 # Localización de una planta agroindustrial frente al Superniño: AHP con SQL
 
-Técnicas y Herramientas Modernas II, Facultad de Ingeniería (UNCuyo), 2026.
-
-Integrantes: Kemelmajer, Sara (14419) · Martinez, Rocío Ana (14912) · Mujica, María Pilar (14736) · Salamone, Lucía (14669)
-
 ## Relación con los módulos anteriores
 
 Este trabajo es la continuación del Módulo 1. Toma la decisión siguiente del proyecto final, usa los datos calculados en el Módulo 3 y la resuelve con una herramienta nueva: el lenguaje SQL.
 
-```
-Módulo 1 (AHP)      ->  qué tema estudiar
-Módulo 3 (SIG)      ->  datos del territorio: empleo, parques, riesgo hídrico
-Este módulo (SQL)   ->  dónde ubicar la planta, con AHP + datos del Módulo 3
-```
 
 **Módulo 1: toma de decisiones.** Con el proceso analítico jerárquico (AHP) se eligió el tema del proyecto final entre tres alternativas. Ganó la *planificación de la producción y el pronóstico de demanda en agroindustria bajo la variabilidad climática del Superniño*. Los cálculos se hicieron con una calculadora web (AHP-OS) y todas las prioridades salieron de juicios del grupo.
 
@@ -43,7 +34,7 @@ El análisis de sensibilidad muestra que la decisión queda entre dos finalistas
 
 | Archivo | Contenido |
 |---|---|
-| `informe_localizacion_SQL.pdf` | Informe (formato LNCS) |
+| [`informe_localizacion_SQL.pdf`] | Informe (formato LNCS) | 
 | `localizacion.sql` | Script completo: tablas, datos, vistas del AHP y sensibilidad |
 | `localizacion.db` | Base SQLite ya construida |
 | `localizacion_SQL.Rmd` | Las mismas consultas desde R Markdown (DBI + RSQLite) |
